@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            background: #60a3bc;
+            padding: 1.5rem 2.5rem; 
+            border-radius: 50px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+            font-size: 2em;
+        }
+
+        /* img {
+            width: 20rem;
+        } */
+
+        a:hover {
+            text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
+        }
+
+    </style>
+    <title>Открыть в Telegram</title>
+</head>
+<body>
+
+    <!-- <img src="/logo.svg" alt="diletant.media"> -->
+    <a href="tg://resolve?domain=diletantmagazine">Открыть в Telegram</a>
+
+    <script>
+            function start() {
+                window.location = "https://t.me/diletantmagazine/";
+                setTimeout(function(){
+                    window.location("tg://resolve?domain=diletantmagazine");
+                }, 1000);
+            }        
+    </script>
+</body>
+</html>
